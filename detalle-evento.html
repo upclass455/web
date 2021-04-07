@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Detalles</title>
+</head>
+<body>
+    <header >
+        <div class="header contenedor">
+            <a href="index.html" >
+                <img src="img/logo-up-class.svg" alt="upclass-logo" class="logo-header">
+            </a>
+            
+            <nav class="navegacion-header">
+                <a href="">Cursos</a>
+                <a href="">Eventos</a>
+                <a href="">Contacto</a>
+                <a href="">Up live</a>
+            </nav>
+        </div>
+ </header>
+ <main >
+    <div class="img-sobre-nosotros">
+        <h2 class="contenedor centrar-texto">Seminario</h2>
+       </div>
+
+
+       <div class="contenido-seminario">
+        <section class="seminario">
+            <h2 class="azul-oscuro"> Aprende sobre seguridad automotriz</h2>
+
+            <p>primer dia gratis</p>
+            <p>En esta capacitación conocerás los sistemas de seguridad del automóvil, la legislación,  normas sobre la seguridad del automóvil y el futuro de la seguridad.</p>
+            <p>No se nesecitan conocimientos previos </p>
+            
+        </section>
+
+        <section class="seminario">
+            <h3 class="azul-oscuro"> Si estás interesado llena el siguiente formulario. </h3>
+
+            <form action="enviar2.php" method="POST">
+                <legend>Nombre</legend>
+                <input type="text" name="nombre" class="text-int" required="required">
+
+                <legend>Email</legend>
+                <input type="email" name="email" id="" class="text-int" required="required">
+
+                <legend>País  de residencia </legend>
+                <select name="pais" id="" class="text-int" required="required">
+                    <option value="" disabled selected>seleccione</option>
+                    <option value="">Argentina </option>
+                    <option value="">Bolivia</option>
+                    <option value="">Brasil</option>
+                    <option value="">Chile</option>
+                    <option value="">Colombia</option>
+                    <option value="">Costa rica</option>
+                    <option value="">Cuba</option>
+                    <option value="">Ecuador</option>
+                    <option value="">Estados Unidos </option>
+                    <option value="">El Salvador</option>
+                    <option value="">España</option>
+                    <option value="">Guatemala</option>
+                    <option value="">Haití</option>
+                    <option value="">Honduras</option>
+                    <option value="">México</option>
+                    <option value="">Nicaragua</option>
+                    <option value="">Panama</option>
+                    <option value="">Paraguay</option>
+                    <option value="">Perú</option>
+                    <option value=""> República Dominicana</option>
+                    <option value="">Uruguay</option>
+                    <option value="">Venezuela</option>
+
+
+                </select>
+
+                <legend>Numero de movil</legend>
+                <input type="number" name="telefono" id="" class="text-int" required="required">
+
+                <p>Contácteme por WhatsApp <input type="checkbox" name="mensaje" id=""></p>
+
+                <input type="submit" value="enviar"  class="btn-enviar">
+            
+
+
+            </form>
+        </section>
+        </div>
+
+ </main>
+    
+
+    <footer>
+        <div class="contenedor footer-cont">
+              
+              <div>
+                  <img class="logo-footer" src="img/logo-up-class.svg" alt="">
+    
+                  
+              <div class="redes">
+                  <div class="red"><a href=""></a></div>
+                  <div class="red"><a href=""></a></div>
+                  <div class="red"><a href=""></a></div>
+                  <div class="red"><a href=""></a></div>
+                  <div class="red"><a href=""></a></div>
+                  </div>
+              </div>
+              
+    
+    
+              <div class="cont-info-footer">
+                  <h4>Sobre nosotros</h4>
+                  <a href="#">sobre Upclass</a>
+                  <a href="#">aulas virtuales</a>
+                  <a href="#">contenidos academicos</a>
+              </div>
+    
+              <div class="cont-info-footer">
+                  <h4>ayuda</h4>
+                  <a href="#">agendar clase</a>
+                  <a href="#">centro de ayuda</a>
+                  <a href="#">PQRS</a>
+              </div>
+              
+        </div>
+        <p class="centrar-texto">&copy; 2021 Upclass  Todos los derechos reservados  </p>
+    </footer>
+</body>
+</html>

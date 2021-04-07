@@ -1,0 +1,430 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+.contenedor{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*utilidades*/
+.centrar-texto{
+  text-align: center;
+}
+.centrar{
+  margin: 0 auto;
+}
+.separacion-eventos{
+  margin-bottom: 1rem;
+}
+.azul-oscuro{
+  color: #2874A6;
+}
+.blanco{
+  color: white;
+}
+
+.boton{
+  height: 3rem;
+  width: 8rem;
+  background-color:#2874A6;
+  padding: 1rem 1.5rem;
+}
+.boton a{
+  width: 100%;
+  
+}
+@media  (min-width: 840px){
+  .boton{
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  
+}
+
+/*header*/
+.header {
+  text-align: center;
+}
+.logo-header{
+  width: 60%;
+}
+.navegacion-header{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.navegacion-header a{
+   font-size: 1.6rem;
+   margin-top: 0.2rem;
+}
+
+/*responsive*/
+@media  (min-width: 840px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .header img{
+    width: 70%;
+  }
+  .navegacion-header{
+    display: inline;
+  }
+  .navegacion-header a{
+    margin-right: .5rem;
+  }
+}
+/* fin header*/
+
+/*cuadro uno*/
+.cuadro-uno{
+  height: 57vh;
+  background-image: url(../img/clase.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+@media  (min-width: 840px){
+  .cuadro-uno h2{
+    font-size: 3rem;
+  }
+  .cuadro-uno p{
+    font-size: 1.3rem;
+  }
+
+}
+
+.boton p{
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/*areas*/
+
+.areas h2{
+  text-align: center;
+}
+
+.targeta{
+border: solid;
+border-width: .1rem;
+border-color:#21618C;
+width: 90%;
+margin: 0 auto;
+margin-top: 1.2rem;
+padding: 0.1rem 0.5rem;
+
+}
+/*targetas responsive*/
+@media  (min-width: 840px){
+  .grupo-targetas{
+    display: flex;
+  }
+  .targeta{
+    margin-left: 1.2rem;
+  }
+}
+/*eventos*/
+.eventos{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  background-color: #F7F9F9;
+  padding: 2rem ;
+}
+.event-target{
+  border-style: solid;
+  border-color:#21618C;
+  border-width: .12rem;
+  width: 85%;
+  height: 50vh;
+  background-color: white;
+
+}
+.foto-event{
+height: 50%;
+background-image: url(../img/seguridad.png);
+background-position: center;
+}
+.info-event{
+  margin-left: .5rem;
+}
+.fecha-evento{
+  color: #154360;
+  font-size: 1.2rem;
+}
+
+.btn-event{
+  background-color:#2874A6;
+  display: inline-block;
+  width: 6rem;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+@media  (min-width: 840px){
+  .event-target{
+    width: 30rem;
+  } 
+}
+/*info*/
+.carct{
+  margin-left: 1rem;
+}
+.sub{
+  color: #2E86C1;
+}
+.cont-img-caract{
+  background-image:url(../img/estudiante.png);
+  background-position: center;
+  background-size: 100%;
+  width: 12rem;
+  height: 9rem;
+  margin: 0 auto;
+
+}
+.cont-img-caract-2{
+  background-image: url(../img/estudiante-2.png);
+
+}
+.cont-img-caract-2{
+  margin-bottom: 1rem;
+}
+@media  (min-width: 840px){
+  .carct{
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .info-caract{
+    width: 60%;
+  }
+  .cont-img-caract{
+    width: 30%;
+    height: 15rem;
+  }
+}
+/*footer*/
+footer{
+  background-color: #F2F3F4;
+  padding:  1rem ;
+}
+.logo-footer{
+  width: 7rem;
+}
+.cont-info-footer{
+  display: flex;
+  flex-direction: column;
+}
+.redes{
+  display: flex;
+}
+.red{
+
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-left: .3rem;
+}
+.facebook{
+background-image: url(../img/redes/facebook.svg);
+background-position: center;
+background-size: cover;
+}
+.twitter{
+background-image: url(../img/redes/twitter.svg);
+background-position: center;
+background-size:contain;
+
+
+}
+.gmail{
+background-image: url(../img/redes/gmail.svg);
+background-position: center;
+background-size: cover;
+
+}
+.pinterest{
+background-image: url(../img/redes/pinterest.svg);
+background-position: center;
+background-size: cover;
+
+}
+.telegram{
+background-image:url(../img/redes/telegram.svg) ;
+background-position: center;
+background-size: cover;
+
+}
+/*footer responsive*/
+@media  (min-width: 840px){
+  .footer-cont{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-footer{
+    width: 10rem;
+    margin-bottom: .5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* sobre nosotros estilos */
+
+.img-sobre-nosotros{
+  margin-top: 2rem;
+  background-image:url(../img/estudiante.png) ;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 15rem;
+  padding: 5rem 2rem;
+  color: white;
+}
+.img-sobre-nosotros h2 {
+  font-size: 2rem;
+}
+.blue-text{
+  color:#2980B9;
+}
+
+.nosotros{
+  margin-bottom: 2rem;
+}
+
+@media  (min-width: 840px){
+  .info-nosotros{
+    display: flex;
+    justify-content: space-between;
+    height: 45vh;
+  }
+
+  .img-nosotros{
+    background-image:url(../img/clase.png);
+    background-size: cover;
+    height: 20rem;
+    width: 30rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .detalles-nosotros{
+    width: 40%;
+    padding-top: 6rem;
+  }
+  .detalles-nosotros p{
+   font-size:1.2rem;
+   text-align: center;
+  }
+}
+
+
+
+
+
+
+/*eventos */
+.eventos-realizados{
+margin-bottom: 3rem;
+}
+
+/*seminario*/
+.seminario{
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+/*formulario*/
+.text-int{
+  width: 80%;
+  border-width: 0rem;
+  border-radius: .2rem;
+  background-color: #E5E7E9;
+  
+}
+.btn-enviar{
+  background-color: #3498DB;
+  color: white;
+  border-radius: .2rem;
+  border-width: 0rem;
+  width:5rem;
+  height: 2rem;
+}
+
+
+
+.space-event{
+  margin-bottom: 2rem;
+}
+
+
+/*detalles seminario*/
+.targeta-detalles{
+  background-color: #F4F6F7;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 1.2rem;
+  height: 30rem;
+  border-style: solid;
+  border-color: #21618C;
+  border-width: .1rem;
+  margin-bottom: 2rem;
+}
+
+.detalles-seminario li{
+ margin-bottom: 1rem;
+ list-style: none;
+}
+.linea::after{
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  content: "";
+  background-color: #5DADE2;
+  width: 89%;
+  height: 0.12rem;
+  margin-top: 1rem;
+}
+@media  (min-width: 840px){
+  .contenido-seminario{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    height: 80vh;
+    margin-top: 2rem;
+  }
+  .targeta-detalles{
+   margin-left: 2rem;
+  }
+  .uno{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .dos{
+    width: 35%;
+  }
+}
